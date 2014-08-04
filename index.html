@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <link href='css/bootstrap.css' rel='stylesheet'>
+    <link href='css/style.css' rel='stylesheet'>
+    <link rel='icon' href='favicon.ico' type='image/x-icon'> 
+    <script src='js/init_background.js'></script>
+    <title>Homepage</title>
+  </head>
+  <body>
+    <div class='container' id='container'>
+      <div class='row text-center'>
+        <div class='col-md-3 col-sm-6 col-xs-12 fit-icon'>
+          <a href='http://www.youtube.com' class='logo'><img src='images/youtube.png' alt='YouTube' /></a>
+        </div>
+        <div class='col-md-3 col-sm-6 col-xs-12 fit-icon'>
+          <a href='http://www.ulpgc.es' class='logo'><img src='images/ulpgc.png' alt='ULPGC' /></a>
+        </div>        
+        <div class='col-md-3 col-sm-6 col-xs-12 fit-icon'>
+          <a href='http://www.google.com' class='logo'><img src='images/google.png' alt='Google' /></a>
+        </div>
+        <div class='col-md-3 col-sm-6 col-xs-12 fit-icon'>
+          <a href='http://www.seriespepito.com' class='logo'><img src='images/seriespepito.png' alt='SeriesPepito' /></a>
+        </div>
+      </div>
+      
+      <div class='row text-center separator-small'>        
+        <div class='col-md-3 col-sm-6 col-xs-12 fit-icon'>
+          <a href='http://www.lonelyplanet.com' class='logo'><img src='images/lonelyplanet.png' alt='GlobeTrekker' /></a>
+        </div>
+        <div class='col-md-3 col-sm-6 col-xs-12 fit-icon'>
+          <a href='http://www.gmail.com' class='logo'><img src='images/gmail.png' alt='GMail' /></a>
+        </div>
+        <div class='col-md-3 col-sm-6 col-xs-12 fit-icon'>
+          <a href='http://www.hotmail.com' class='logo'><img src='images/hotmail.png' alt='Hotmail' /></a>
+        </div>
+        <div class='col-md-3 col-sm-6 col-xs-12 fit-icon'>
+          <a href='https://login.yahoo.com/config/login_verify2?.intl=es&.src=ym' class='logo'><img src='images/yahoo.png' alt='Yahoo! Mail' /></a>
+        </div>
+      </div>
+      
+      <div class='row text-center separator-small'>        
+        <div class='col-md-3 col-sm-6 col-xs-12 fit-icon'>
+          <a href='http://opac.ulpgc.es' class='logo'><img src='images/biblioteca.png' alt='Biblioteca ULPGC' /></a>
+        </div>
+        <div class='col-md-3 col-sm-6 col-xs-12 fit-icon'>
+          <a href='http://correo.ulpgc.es' class='logo'><img src='images/correo.png' alt='Correo ULPGC' /></a>
+        </div>
+        <div class='col-md-3 col-sm-6 col-xs-12 fit-icon'>
+          <a href='http://www.w3schools.com' class='logo'><img src='images/w3schools.png' alt='W3 Schools' /></a>
+        </div>
+        <div class='col-md-3 col-sm-6 col-xs-12 fit-icon'>
+          <a href='http://www.microsoftvirtualacademy.com/' class='logo'><img src='images/microsoft.png' alt='Microsoft Virtual Academy' /></a>
+        </div>
+      </div>
+      
+      <div class='row text-center separator-small'>        
+        <div class='col-md-3 col-sm-6 col-xs-12 fit-icon'>
+          <a href='http://9gag.com/trending' class='logo'><img src='images/9gag.png' alt='9GAG' /></a>
+        </div>
+        <div class='col-md-3 col-sm-6 col-xs-12 fit-icon'>
+          <a href='http://player.streamtheworld.com/liveplayer.php?CALLSIGN=ARNCITY' class='logo'><img src='images/cityfm.png' alt='CityFM' /></a>
+        </div>
+        <div class='col-md-3 col-sm-6 col-xs-12 fit-icon'>
+          <a href='http://www.facebook.com' class='logo'><img src='images/facebook.png' alt='FaceBook' /></a>
+        </div>
+        <div class='col-md-3 col-sm-6 col-xs-12 fit-icon'>
+          <a href='http://www.grooveshark.com' class='logo'><img src='images/grooveshark.png' alt='Grooveshark' /></a>
+        </div>
+      </div>
+      
+      <div id="background"></div>
+    </div>
+
+    <script>
+      function centerContainer() {
+        var containerHeight = document.getElementById('container').clientHeight;
+        if(window.innerHeight > containerHeight) {
+          document.getElementById('container').style.marginTop = (window.innerHeight * 0.5) - containerHeight * 0.5 + 'px';
+        } else {
+          document.getElementById('container').style.marginTop = '0px';
+        }
+      }      
+      centerContainer();      
+      window.onresize = function(event) { centerContainer(); }
+      loadBackground();
+    </script>
+  </body>
+</html>
