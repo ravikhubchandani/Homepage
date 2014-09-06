@@ -8,7 +8,7 @@
     <script src='js/init_background.js'></script>
     <title>Homepage</title>
   </head>
-  <body>
+  <body onload='centerContainer();'>
     <div class='container' id='container'>
       <div class='row text-center'>
         <div class='col-md-3 col-sm-6 col-xs-12 fit-icon'>
@@ -75,14 +75,13 @@
 
     <script>
       function centerContainer() {
-        var containerHeight = document.getElementById('container').clientHeight;
+        var containerHeight = document.getElementById('container').offsetHeight;
         if(window.innerHeight > containerHeight) {
           document.getElementById('container').style.marginTop = (window.innerHeight * 0.5) - containerHeight * 0.5 + 'px';
         } else {
           document.getElementById('container').style.marginTop = '0px';
         }
-      }      
-      centerContainer();      
+      }
       window.onresize = function(event) { centerContainer(); }
       loadBackground();
     </script>
