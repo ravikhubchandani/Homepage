@@ -4,7 +4,8 @@ function loadBackground() {
 }
 
 function getBingBackground() {
-  return 'http://www.bing.com/az/hprichbg/rb/' + getRandomBackground();
+  // return 'http://www.bing.com/az/hprichbg/rb/' + getRandomBackground();
+  return 'http://ravi.meximas.com/backgrounds/' + getRandomBackground();
 }
 
 function setBackground(filename) {
@@ -14,7 +15,7 @@ function setBackground(filename) {
 function getRandomBackground() {
   var backgroundHash =
     {
-      0 : 'Fireflies_ROW8934779312_1366x768.jpg',
+      /*0 : 'Fireflies_ROW8934779312_1366x768.jpg',
       1 : 'SackvilleWaterfowlPark_ROW13898530841_1366x768.jpg',
       2 : 'HecetaLighthouse_ROW10376945185_1366x768.jpg',
       3 : 'PaloCorona_ROW14794353582_1366x768.jpg',
@@ -79,7 +80,11 @@ function getRandomBackground() {
       62: 'IguazuRiver_ROW14070257052_1366x768.jpg',
       63: 'TsocowisCreekBridge_ROW10039992335_1366x768.jpg',
       64: 'OryxHerd_ROW12403456094_1366x768.jpg',
-      65: 'BikeChain_ROW12236857139_1366x768.jpg'
+      65: 'BikeChain_ROW12236857139_1366x768.jpg'*/
+	  0  : 'DumbartonOaksGardens_ROW12870196401_1920x1080.jpg'
+	  ,1 : 'YoungLambsFrolicking_ROW9278909901_1920x1080.jpg'
+	  ,2 : 'LyngenAlps_ROW14772774791_1920x1080.jpg'
+	  ,3 : 'SilverFallsVideo_ROW11236256204_1920x1080.jpg'
     }
   var MAX = Object.keys(backgroundHash).length;
   var index = Math.floor(Math.random() * MAX);
