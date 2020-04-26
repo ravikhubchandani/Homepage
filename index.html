@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset='utf-8'>
-    <link href='css/bootstrap.css' rel='stylesheet'>
+    <link href='css/bootstrap.min.css' rel='stylesheet'>
     <link href='css/style.css' rel='stylesheet'>
     <link rel='icon' href='favicon.ico' type='image/x-icon'>
     <script src='js/init_background.js'></script>
@@ -10,66 +10,137 @@
   </head>
   <body onload='initBody();'>
     <div class='container' id='container'>
-      <div class='row text-center'>
-        <div class='col-md-3 col-sm-6 col-xs-12 fit-icon'>
-          <a href='http://www.youtube.com' class='logo'><img src='images/youtube.png' alt='YouTube' /></a>
+	  <div class='row text-center'>
+	    <div class='col-xs-12'>
+			<div class='input-group'>
+              <input type='text' class='form-control' placeholder='Google search' id='query' autofocus/>
+              <div class='input-group-btn' id='btn-search'>
+                <button class='btn btn-primary'>
+                  <span class='glyphicon glyphicon-search'></span>
+                </button>
+              </div>
+            </div>
+	    </div>
+	  </div>
+	  
+	  <!-- First row -->
+      <div class='row text-center separator-medium'>
+        <div class='col-md-3 col-sm-6 col-xs-12'>
+		  <div class='row'>
+		    <div class='col-md-3 col-sm-6 col-xs-12 fit-icon'>
+			  <a href='https://www.youtube.com'><span class='badge badge-dark'><img src='https://www.youtube.com/favicon.ico' />&nbsp;YTUBE</span></a>
+			</div>
+			<div class='col-md-3 col-sm-6 col-xs-12 fit-icon'>
+              <a href='https://www.9gag.com/trending'><span class='badge badge-dark'><img src='https://www.9gag.com/favicon.ico' />&nbsp;9GAG</span></a>
+            </div>        
+            <div class='col-md-3 col-sm-6 col-xs-12 fit-icon'>
+              <a href='https://www.facebook.com'><span class='badge badge-dark'><img src='https://www.facebook.com/favicon.ico' />&nbsp;FCBK</span></a>
+            </div>
+		  </div>          
         </div>
-        <div class='col-md-3 col-sm-6 col-xs-12 fit-icon'>
-          <a href='http://www.9gag.com/trending' class='logo'><img src='images/9gag.png' alt='9GAG' /></a>
-        </div>        
-        <div class='col-md-3 col-sm-6 col-xs-12 fit-icon'>
-          <a href='http://www.google.com' class='logo'><img src='images/google.png' alt='Google' /></a>
+		
+		<div class='col-md-3 col-sm-6 col-xs-12'>
+		  <div class='row'>
+		    <div class='col-md-3 col-sm-6 col-xs-12 fit-icon'>
+			  <a href='https://www.pelisplay.co/'><span class='badge badge-faded'><img src='https://www.pelisplay.co/static/img/favicon.png' />&nbsp;PPLAY</span></a>
+			</div>
+			<div class='col-md-3 col-sm-6 col-xs-12 fit-icon'>
+              <a href='https://kimcartoon.to/'><span class='badge badge-faded'><img src='https://kimcartoon.to/Content/images/favicon.ico' />&nbsp;TOON</span></a>
+            </div>        
+            <div class='col-md-3 col-sm-6 col-xs-12 fit-icon'>
+              <a href='https://cuevana3.io/'><span class='badge badge-faded'><img src='https://cuevana3.io/wp-content/uploads/2019/03/cropped-favicon-1-32x32.png' />&nbsp;CVNA</span></a>
+            </div>
+		  </div>          
         </div>
-        <div class='col-md-3 col-sm-6 col-xs-12 fit-icon'>
-          <a href='http://www.seriesdanko.com' class='logo'><img src='images/seriesyonkis.png' alt='SeriesYonkis' /></a>
+		
+		<div class='col-md-3 col-sm-6 col-xs-12'>
+		  <div class='row'>
+		    <div class='col-md-3 col-sm-6 col-xs-12 fit-icon'>
+			  <a href='https://www.gmail.com'><span class='badge'><img src='https://ssl.gstatic.com/ui/v1/icons/mail/images/favicon.ico' />&nbsp;MAIL</span></a>
+			</div>
+			<div class='col-md-3 col-sm-6 col-xs-12 fit-icon'>
+              <a href='https://particulares.bancosantander.es/login/'><span class='badge'><img src='https://particulares.bancosantander.es/login/assets/image/icons/favicon-32x32.png' />&nbsp;BANK</span></a>
+            </div>        
+            <div class='col-md-3 col-sm-6 col-xs-12'>
+              <a href='https://www.pluralsight.com'><span class='badge'><img src='https://www.pluralsight.com/etc/clientlibs/pluralsight/main/images/favicons/favicon.ico' />&nbsp;PLST</span></a>
+            </div>
+		  </div>     
+        </div>
+		
+		<div class='col-md-3 col-sm-6 col-xs-12'>
+		  <div class='row'>
+		    <div class='col-md-3 col-sm-6 col-xs-12 fit-icon'>
+			  <a href='https://github.com/'><span class='badge badge-info'><img src='https://github.com/favicon.ico' />&nbsp;GITH</span></a>
+			</div>
+			<div class='col-md-3 col-sm-6 col-xs-12 fit-icon'>
+              <a href='https://www.udemy.com/'><span class='badge badge-info'><img src='https://www.udemy.com/favicon.ico' />&nbsp;UDMY</span></a>
+            </div>        
+            <div class='col-md-3 col-sm-6 col-xs-12'>
+              <a href='https://www.coursera.org'><span class='badge badge-info'><img src='https://www.coursera.org/favicon.ico' />&nbsp;COUR</span></a>
+            </div>
+		  </div>          
         </div>
       </div>
-      
-      <div class='row text-center separator-small'>        
-        <div class='col-md-3 col-sm-6 col-xs-12 fit-icon'>
-          <a href='http://www.toonget.com/cartoon' class='logo'><img src='images/toonget.png' alt='Cartoons' /></a>
+	  
+	  <!-- Second row -->
+	  <div class='row text-center separator-small'>
+        <div class='col-md-3 col-sm-6 col-xs-12'>
+		  <div class='row'>
+		    <div class='col-md-3 col-sm-6 col-xs-12 fit-icon'>
+			  <a href='https://keepvid.pro/en35/'><span class='badge badge-primary'><img src='https://keepvid.pro/favicon.ico' />&nbsp;KEEP</span></a>
+			</div>
+			<div class='col-md-3 col-sm-6 col-xs-12 fit-icon'>
+              <a href='https://www.booking.com/'><span class='badge badge-primary'><img src='https://secure.booking.com/favicon.ico' />&nbsp;BKNG</span></a>
+            </div>        
+            <div class='col-md-3 col-sm-6 col-xs-12'>
+              <a href='https://www.linkedin.com/'><span class='badge badge-primary'><img src='https://static-exp1.licdn.com/scds/common/u/images/logos/favicons/v1/favicon.ico' />&nbsp;LNKD</span></a>
+            </div>
+		  </div>          
         </div>
-        <div class='col-md-3 col-sm-6 col-xs-12 fit-icon'>
-          <a href='http://www.gmail.com' class='logo'><img src='images/gmail.png' alt='GMail' /></a>
+		
+		<div class='col-md-3 col-sm-6 col-xs-12'>
+		  <div class='row'>
+		    <div class='col-md-3 col-sm-6 col-xs-12 fit-icon'>
+			  <a href='https://freakonomics.com/'><span class='badge badge-warning'><img src='https://freakonomics.com/favicon.ico' />&nbsp;FKMS</span></a>
+			</div>
+			<div class='col-md-3 col-sm-6 col-xs-12 fit-icon'>
+              <a href='https://www.ebay.com/'><span class='badge badge-warning'><img src='https://www.ebay.com/favicon.ico' />&nbsp;EBAY</span></a>
+            </div>        
+            <div class='col-md-3 col-sm-6 col-xs-12'>
+              <a href='https://www.amazon.com/'><span class='badge badge-warning'><img src='https://www.amazon.com/favicon.ico' />&nbsp;AMZN</span></a>
+            </div>
+		  </div>          
         </div>
-        <div class='col-md-3 col-sm-6 col-xs-12 fit-icon'>
-          <a href='http://www.hotmail.com' class='logo'><img src='images/hotmail.png' alt='Hotmail' /></a>
+		
+		<div class='col-md-3 col-sm-6 col-xs-12'>
+		  <div class='row'>
+		    <div class='col-md-3 col-sm-6 col-xs-12 fit-icon'>
+			  <a href='https://www.xe.com/'><span class='badge badge-dark'><img src='https://www.xe.com/favicon.ico' />&nbsp;XEFX</span></a>
+			</div>
+			<div class='col-md-3 col-sm-6 col-xs-12 fit-icon'>
+              <a href='https://goldprice.org/'><span class='badge badge-dark'><img src='https://goldprice.org/favicon.ico' />&nbsp;GOLD</span></a>
+            </div>        
+            <div class='col-md-3 col-sm-6 col-xs-12'>
+              <a href='#'><span class='badge badge-faded'><img src='favicon.ico' />&nbsp;BLNK</span></a>
+            </div>
+		  </div>     
         </div>
-        <div class='col-md-3 col-sm-6 col-xs-12 fit-icon'>
-          <a href='https://login.yahoo.com/config/login_verify2?.intl=es&.src=ym' class='logo'><img src='images/yahoo.png' alt='Yahoo! Mail' /></a>
+		
+		<div class='col-md-3 col-sm-6 col-xs-12'>
+		  <div class='row'>
+		    <div class='col-md-3 col-sm-6 col-xs-12 fit-icon'>
+			  <a href='#'><span class='badge badge-faded'><img src='favicon.ico' />&nbsp;BLNK</span></a>
+			</div>
+			<div class='col-md-3 col-sm-6 col-xs-12 fit-icon'>
+              <a href='#'><span class='badge badge-faded'><img src='favicon.ico' />&nbsp;BLNK</span></a>
+            </div>        
+            <div class='col-md-3 col-sm-6 col-xs-12'>
+              <a href='#'><span class='badge badge-faded'><img src='favicon.ico' />&nbsp;BLNK</span></a>
+            </div>
+		  </div>          
         </div>
       </div>
-      
-      <div class='row text-center separator-small'>        
-        <div class='col-md-3 col-sm-6 col-xs-12 fit-icon'>
-          <a href='http://www.github.com' class='logo'><img src='images/github.png' alt='GitHub' /></a>
-        </div>
-        <div class='col-md-3 col-sm-6 col-xs-12 fit-icon'>
-          <a href='http://www.coursera.org' class='logo'><img src='images/coursera.png' alt='Coursera' /></a>
-        </div>
-        <div class='col-md-3 col-sm-6 col-xs-12 fit-icon'>
-          <a href='http://www.w3schools.com' class='logo'><img src='images/w3schools.png' alt='W3 Schools' /></a>
-        </div>
-        <div class='col-md-3 col-sm-6 col-xs-12 fit-icon'>
-          <a href='http://www.microsoftvirtualacademy.com/' class='logo'><img src='images/microsoft.png' alt='Microsoft Virtual Academy' /></a>
-        </div>
-      </div>
-      
-      <div class='row text-center separator-small'>        
-        <div class='col-md-3 col-sm-6 col-xs-12 fit-icon'>
-          <a href='http://www.pepecine.com' class='logo'><img src='images/pepecine.png' alt='Peliculas On-Line' /></a>
-        </div>
-        <div class='col-md-3 col-sm-6 col-xs-12 fit-icon'>
-          <a href='http://www.rtve.es/directo/la-1/' class='logo'><img src='images/rtve.png' alt='rtve' /></a>
-        </div>
-        <div class='col-md-3 col-sm-6 col-xs-12 fit-icon'>
-          <a href='http://www.facebook.com' class='logo'><img src='images/facebook.png' alt='FaceBook' /></a>
-        </div>
-        <div class='col-md-3 col-sm-6 col-xs-12 fit-icon'>
-          <a href='http://www.lifehack.org/' class='logo'><img src='images/lifehack.png' alt='LifeHack' /></a>
-        </div>
-      </div>
-      
+	  <!-- - -->	  
       <div id="background"></div>
     </div>
 
@@ -90,6 +161,23 @@
 	  }
 	  
 	  window.onresize = function(event) { centerContainer(); }
+	  
+	  function googleSearch(query) {
+	    if(query !== "") window.location.replace("https://www.google.com/search?q=" + query.replace(/ /gi, '+'));
+	  }
+	  
+	  document.getElementById("query").addEventListener("keyup",
+	    function(event) {
+	      if (event.keyCode === 13) {
+		    event.preventDefault();
+			googleSearch(event.srcElement.value);
+	      }
+	    });
+		
+	  document.getElementById("btn-search").addEventListener("click",
+	    function(event) {
+		  googleSearch(document.getElementById("query").value);
+	    });
     </script>
   </body>
 </html>

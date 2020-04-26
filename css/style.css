@@ -5,24 +5,44 @@ body {
 
 #container {
   position: relative;
-  border: 5px solid black;
+  border: 5px solid gray;
   border-radius: 7px;
   padding-top: 1.75%;
   padding-bottom: 1.75%;
 }
 
-.separator-small { margin-top: 1.75%; }
+.separator-small { margin-top: 2%; }
+.separator-medium { margin-top: 5%; }
 
 .logo {
   display: inline-block;
   border-radius: 7px;
-  border: solid 1px gray;
-  transition: box-shadow 0.5s;  
+  border: solid 1px gray;  
   margin: 0.5%;
+  transition: box-shadow 0.5s;  
 }
 .logo img { border-radius: 7px; }
-.logo:hover { box-shadow: 0px 0px 30px black; }
+.logo:hover { box-shadow: 0 0 15px black; }
 .logo:link, .logo:visited, .logo:hover, .logo:active { color: transparent; }
+
+.badge { padding: 4px 6px; }
+.badge img { width: 20px; }
+.badge-dark { background-color: #292b2c; }
+.badge-info {
+	background-color: #5bc0de;
+	color: black;
+}
+.badge-primary { background-color: #0275d8; }
+.badge-faded {
+	background-color: #f7f7f7;
+	color: black;
+}
+.badge-success { background-color: #5cb85c; }
+.badge-warning {
+	background-color: #f0ad4e;
+	color: black;
+}
+.badge-danger { background-color:#d9534f; }
 
 #background {
   position: absolute;
